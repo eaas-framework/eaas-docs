@@ -33,19 +33,19 @@ The emulation environment's header components define filds common to all emulato
 + `arch` (Enumeration): currently supported only be Qemu: `i386`,`ppc`
 + `emulator` (String): a EaaS EmulatorBean implementation. An emulator bean integrates a specific emulator into the framework. 
   + Supported beans:
-    BasiliskII (example)  
-    Beebem (example) 
-    DosBox (examples: [Doom](./examples/doom.env))
-    Hatari (example: [Atari](.examples/hatari_tOS206us.env)) 
-    Kegs (example) 
-    PceAtari (example) 
-    PceIbmPc (example) 
-    PceMacPlus (example) 
-    Qemu (examples: [Dos 6.2](./examples/dos620_cdrom.env) [Win 3.11](./examples/win311.env)) 
-    SheepShaver (examples: [MacOS9](./examples/macos9.env)) 
-    ViceC128 (example) 
-    ViceC64 (example) 
-    VirtualBox (example) 
+    + BasiliskII (example)  
+    + Beebem (example) 
+    + DosBox (examples: [Doom](./examples/doom.env))
+    + Hatari (example: [Atari](.examples/hatari_tOS206us.env)) 
+    + Kegs (example) 
+    + PceAtari (example) 
+    + PceIbmPc (example) 
+    + PceMacPlus (example) 
+    + Qemu (examples: [Dos 6.2](./examples/dos620_cdrom.env) [Win 3.11](./examples/win311.env)) 
+    + SheepShaver (examples: [MacOS9](./examples/macos9.env)) 
+    + ViceC128 (example) 
+    + ViceC64 (example) 
+    + VirtualBox (example) 
  
 Example: 
 ```XML
