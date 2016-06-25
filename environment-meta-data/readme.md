@@ -28,24 +28,24 @@ The emulation environment's header components define filds common to all emulato
 
 + `id` (String): unique identifier of the environment
 + `description`: descriptive information 
-⋅⋅+ `title` (String)
-⋅⋅+ `os` (String)
+  + `title` (String)
+  + `os` (String)
 + `arch` (Enumeration): currently supported only be Qemu: `i386`,`ppc`
 + `emulator` (String): a EaaS EmulatorBean implementation. An emulator bean integrates a specific emulator into the framework. 
-⋅⋅+ Supported beans:
-⋅⋅⋅ BasiliskII (example)  
-⋅⋅⋅ Beebem (example) 
-⋅⋅⋅ DosBox (example)
-⋅⋅⋅ Hatari (example) 
-⋅⋅⋅ Kegs (example) 
-⋅⋅⋅ PceAtari (example) 
-⋅⋅⋅ PceIbmPc (example) 
-⋅⋅⋅ PceMacPlus (example) 
-⋅⋅⋅ Qemu (example) 
-⋅⋅⋅ SheepShaver (example) 
-⋅⋅⋅ ViceC128 (example) 
-⋅⋅⋅ ViceC64 (example) 
-⋅⋅⋅ VirtualBox (example) 
+  + Supported beans:
+    BasiliskII (example)  
+    Beebem (example) 
+    DosBox (examples: [Doom](./examples/doom.env))
+    Hatari (example: [Atari](.examples/hatari_tOS206us.env)) 
+    Kegs (example) 
+    PceAtari (example) 
+    PceIbmPc (example) 
+    PceMacPlus (example) 
+    Qemu (examples: [Dos 6.2](./examples/dos620_cdrom.env) [Win 3.11](./examples/win311.env)) 
+    SheepShaver (examples: [MacOS9](./examples/macos9.env)) 
+    ViceC128 (example) 
+    ViceC64 (example) 
+    VirtualBox (example) 
  
 Example: 
 ```XML
@@ -57,6 +57,9 @@ Example:
     </description>
     <arch>i386</arch>
     <emulator bean="Qemu" />
+
+    <!-- ... -->
+</emulationEnvironment>
 ```
 
 ## UI Options
@@ -131,4 +134,6 @@ Example, creates a new "main_hdd" binding to be used with a drive. The url refer
   <access>cow</access>
  </binding>
 ```
-  
+
+## Native Config
+The native config allows to pass emulator specific options to the emulator. See SheepShaver examples.    
