@@ -41,11 +41,11 @@ The emulation environment's header components define filds common to all emulato
     + PceAtari (example) 
     + PceIbmPc (example) 
     + PceMacPlus (example) 
-    + Qemu (examples: [Dos 6.2](./examples/dos620_cdrom.env) [Win 3.11](./examples/win311.env)) 
+    + Qemu (examples: [Dos 6.2](./examples/dos620_cdrom.env), [Win 3.11](./examples/win311.env)) 
     + SheepShaver (examples: [MacOS9](./examples/macos9.env)) 
     + ViceC128 (example) 
     + ViceC64 (example) 
-    + VirtualBox (example) 
+    + VirtualBox (examples: [Windows 98](./examples/win98_office.env))
  
 Example: 
 ```XML
