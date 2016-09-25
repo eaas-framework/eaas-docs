@@ -76,11 +76,14 @@ This method returns an identification string for the current object archive inst
               <!-- accessible reference to the image file --> 
               <xs:element type="xs:string" name="url"/>
             
-              <!-- in some cases the filename of the image file matters. E.g. if we cannot guess the filename from the URL or an emulator requires a certain suffix etc. -->
+              <!-- in some cases the filename of the image file matters. E.g. if we cannot guess the 
+              filename from the URL or an emulator requires a certain suffix etc. -->
               <!-- optional -->
               <xs:element type="xs:string" name="localAlias"/>
               
-              <!-- optional: provide file size information. in cases when the file size is not block aligned (i.e. not a multiple of 512) the file will be padded to be used with block-layer tools. If the filesize is set, the file will be trimmed to that size if accessed by the emulator. -->
+              <!-- optional: provide file size information. in cases when the file size is not block aligned 
+              (i.e. not a multiple of 512) the file will be padded to be used with block-layer tools. If the 
+              file size is set, the file will be trimmed to that size if accessed by the emulator. -->
               <xs:element type="xs:string" name="filesize"/>
             </xs:sequence>
           </xs:complexType>
