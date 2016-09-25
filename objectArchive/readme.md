@@ -36,6 +36,12 @@ objects/
  |      |- disk1.img
 ```
 
+For this simple archive, all required metadata is encoded within the filesystem structure. 
+
+* Every folder in `objects` represents a digital object, the folder name the object's id. The object ID can 
+be an arbitrary string. 
+* Every object may contain subfolders labeled `iso`, `floppy`and `disk`. These folder names encode what kind of 
+images they contain. 
 
 # Interfaces
 The object archive interface defines currently three methods: 
@@ -70,7 +76,7 @@ This method returns an identification string for the current object archive inst
         <xs:element name="FileCollectionEntry">
           <xs:complexType>
             <xs:sequence>
-              <!-- media type. allowed values: iso, cdrom, floppy -->
+              <!-- media type. allowed values: disk, cdrom, floppy -->
               <xs:element type="xs:string" name="type"/>
               
               <!-- accessible reference to the image file --> 
