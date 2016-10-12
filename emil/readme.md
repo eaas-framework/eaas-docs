@@ -1,5 +1,7 @@
 # EMIL UI (Demo of the RESTful EaaS API)
 
+[Install and run the docker instance.](docker.md)
+
 ## User View
 
 Entrypoint catalog 
@@ -28,7 +30,7 @@ Entrypoint catalog
 
 
 =======
-Edit an objects emulation environents 
+Edit an object's emulation environments 
 ![Characterization](../imgs/emil-admin-ui-1.png)
 
 
